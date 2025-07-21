@@ -20,6 +20,15 @@ function ProjectsSection() {
       keywords: "blog, writing, fullstack, content",
       url: "https://github.com/Anurag20075/Blog_Project",
     },
+     {
+      title: "Weather Web App",
+      desc: "A web app to display real-time weather using OpenWeather API.",
+      tech: ["React","HTML", "CSS", "JavaScript", "OpenWeather API"],
+      image:
+        "https://i.pinimg.com/1200x/4c/72/09/4c72099507913a8120bb12de64044a2d.jpg",
+      keywords: "weather, api, javascript",
+      url: "https://github.com/Anurag20075/Weather-Web",
+    },
     {
       title: "Amazon Clone",
       desc: "A frontend clone of Amazon with navigation, cart, and UI features.",
@@ -29,15 +38,7 @@ function ProjectsSection() {
       keywords: "ecommerce, clone, frontend",
       url: "https://github.com/Anurag20075/Amazon-Clone",
     },
-    {
-      title: "Weather Web App",
-      desc: "A web app to display real-time weather using OpenWeather API.",
-      tech: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
-      image:
-        "https://i.pinimg.com/1200x/4c/72/09/4c72099507913a8120bb12de64044a2d.jpg",
-      keywords: "weather, api, javascript",
-      url: "https://github.com/Anurag20075/Weather-Web",
-    },
+   
   ];
 
   return (
