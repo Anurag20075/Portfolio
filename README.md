@@ -1,12 +1,76 @@
-# React + Vite
+# 💼 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio built using **React.js** and **Tailwind CSS**! This project showcases my projects, skills, education, contact information, and more — all in a sleek, responsive, and dark/light toggle-enabled interface.
 
-Currently, two official plugins are available:
+![Screenshot](./public/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 [Visit Portfolio](portfolio-five-flame-11.vercel.app)  
+📂 [GitHub Repository](https://github.com/Anurag20075/Portfolio)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Features
+
+- 🔥 Fully responsive layout  
+- 🌙 Dark/Light mode toggle  
+- 🧩 Reusable React components  
+- 📁 Projects section with detailed cards  
+- 🧠 Skills section with icons  
+- 📚 Education timeline  
+- 📞 Contact form (submits via EmailJS or other service)  
+- 🎨 Tailwind CSS for styling  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js  
+- **Styling**: Tailwind CSS  
+- **Routing**: React Router  
+- **Icons**: Lucide React  
+- **Deployment**: GitHub Pages / Netlify / Vercel  
+
+---
+
+## 📁 Folder Structure
+```
+ src/
+ ├── assets/ # Images and media
+ ├── components/ # All reusable React components 
+ ├── App.jsx # Main App component with routing
+ ├── main.jsx # Entry point
+ └── index.css # Tailwind & custom styles
+```
+
+## 🧑‍💻 How to Use Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Anurag20075/Portfolio.git
+
+# 2. Navigate into the project directory
+cd Portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+```
+📬 Contact
+Have questions, suggestions, or opportunities?
+
+Portfolio: anuraggoyal.tech
+
+Email: [goyalanurag2005@gmail.com]
+
+LinkedIn: linkedin.com/in/anurag-goyal
+
+GitHub: [github.com/Anurag20075]
+
+📝 License
+* This project is open-source and available under the MIT License.
+
+
