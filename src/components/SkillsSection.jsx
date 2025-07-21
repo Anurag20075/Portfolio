@@ -1,44 +1,59 @@
 import React from "react";
-// import "font-awesome/css/font-awesome.min.css"; // Ensure you have Font Awesome included
+
 function SkillsSection() {
   const skills = [
     {
       name: "Java",
       icon: "fa-brands fa-java",
       color: "text-red-500",
+      level: 85,
+      barColor: "bg-red-500",
     },
     {
       name: "Spring Boot",
       icon: "fa-solid fa-leaf",
       color: "text-green-500",
+      level: 40,
+      barColor: "bg-green-500",
     },
     {
-      name: "HTML",
+      name: "HTML/CSS",
       icon: "fa-brands fa-html5",
-      color: "text-orange-500",
-      subColor: "text-blue-400",
-    },
-    {
-      name: "CSS",
       subIcon: "fa-brands fa-css3-alt",
       color: "text-orange-500",
-      subColor: "text-blue-400",
+      level: 100,
+      barColor: "bg-orange-500",
     },
+
+    {
+      name: "DSA & Algorithms",
+      icon: "fa-solid fa-diagram-project", // Added meaningful icon
+      color: "text-blue-500",
+      level: 40,
+      barColor: "bg-blue-500",
+    },
+
     {
       name: "JavaScript",
       icon: "fa-brands fa-js",
       color: "text-yellow-500",
+      level: 85,
+      barColor: "bg-yellow-400",
     },
     {
       name: "React",
       icon: "fa-brands fa-react",
       color: "text-blue-500",
+      level: 80,
+      barColor: "bg-blue-400",
     },
     {
       name: "Tailwind CSS",
       icon: "material-symbols-outlined",
       symbol: "palette",
       color: "text-cyan-500",
+      level: 85,
+      barColor: "bg-cyan-400",
     },
     {
       name: "Git & GitHub",
@@ -46,6 +61,8 @@ function SkillsSection() {
       subIcon: "fa-brands fa-github",
       color: "text-orange-600",
       subColor: "text-white dark:text-white",
+      level: 100,
+      barColor: "bg-gray-800",
     },
   ];
 
@@ -61,6 +78,7 @@ function SkillsSection() {
             frontend frameworks and version control.
           </p>
         </div>
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
           {skills.map((skill, index) => (
             <div
@@ -68,7 +86,7 @@ function SkillsSection() {
               className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
             >
               <div className="flex flex-col items-center">
-                {/* Handle icons */}
+                {/* Handle Icons */}
                 {skill.icon === "material-symbols-outlined" ? (
                   <span
                     className={`material-symbols-outlined text-4xl ${skill.color} mb-4 group-hover:scale-110 transition-transform`}
@@ -77,9 +95,11 @@ function SkillsSection() {
                   </span>
                 ) : (
                   <div className="flex items-center gap-2 mb-4">
-                    <i
-                      className={`${skill.icon} text-4xl ${skill.color} group-hover:scale-110 transition-transform`}
-                    ></i>
+                    {skill.icon && (
+                      <i
+                        className={`${skill.icon} text-4xl ${skill.color} group-hover:scale-110 transition-transform`}
+                      ></i>
+                    )}
                     {skill.subIcon && (
                       <i
                         className={`${skill.subIcon} text-3xl ${
@@ -98,10 +118,8 @@ function SkillsSection() {
                 {/* Progress bar */}
                 <div className="w-full bg-gray-200 dark:bg-gray-600 h-2 rounded-full overflow-hidden">
                   <div
-                    className={`h-full bg-gradient-to-r from-primary-400 to-${
-                      skill.color.split("-")[1]
-                    } group-hover:animate-pulse`}
-                    style={{ width: `${75 + Math.random() * 25}%` }}
+                    className={`h-full ${skill.barColor} group-hover:animate-pulse transition-all duration-500`}
+                    style={{ width: `${skill.level}%` }}
                   ></div>
                 </div>
               </div>
