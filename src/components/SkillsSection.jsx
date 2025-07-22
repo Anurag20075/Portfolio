@@ -6,7 +6,7 @@ function SkillsSection() {
       name: "Java",
       icon: "fa-brands fa-java",
       color: "text-red-500",
-      level: 85,
+      level: 60,
       barColor: "bg-red-500",
     },
     {
@@ -21,7 +21,7 @@ function SkillsSection() {
       icon: "fa-brands fa-html5",
       subIcon: "fa-brands fa-css3-alt",
       color: "text-orange-500",
-      level: 100,
+      level: 80,
       barColor: "bg-orange-500",
     },
 
@@ -37,14 +37,14 @@ function SkillsSection() {
       name: "JavaScript",
       icon: "fa-brands fa-js",
       color: "text-yellow-500",
-      level: 85,
+      level: 50,
       barColor: "bg-yellow-400",
     },
     {
       name: "React",
       icon: "fa-brands fa-react",
       color: "text-blue-500",
-      level: 80,
+      level: 70,
       barColor: "bg-blue-400",
     },
     {
@@ -52,7 +52,7 @@ function SkillsSection() {
       icon: "material-symbols-outlined",
       symbol: "palette",
       color: "text-cyan-500",
-      level: 85,
+      level: 70,
       barColor: "bg-cyan-400",
     },
     {
@@ -61,7 +61,7 @@ function SkillsSection() {
       subIcon: "fa-brands fa-github",
       color: "text-orange-600",
       subColor: "text-white dark:text-white",
-      level: 100,
+      level: 60,
       barColor: "bg-gray-800",
     },
   ];
