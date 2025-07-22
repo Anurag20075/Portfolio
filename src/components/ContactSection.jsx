@@ -70,7 +70,7 @@ function ContactSection() {
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start space-x-6 mt-6">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/anurag-goyal-05929b317/"
                 className="w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-md flex items-center justify-center transform hover:scale-110 hover:shadow-lg transition-all duration-300"
               >
                 <i className="fa-brands fa-linkedin text-blue-600 text-xl"></i>
