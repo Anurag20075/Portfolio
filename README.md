@@ -6,8 +6,8 @@ Welcome to my personal developer portfolio built using **React.js** and **Tailwi
 
 ## 🚀 Live Demo
 
-🔗 [Visit Portfolio](portfolio-five-flame-11.vercel.app)  
-📂 [GitHub Repository](https://github.com/Anurag20075/Portfolio)
+You can view my live website hosted on Vercel here:  
+👉 [portfolio-five-flame-11.vercel.app](https://portfolio-five-flame-11.vercel.app) 
 
 ---
 
@@ -66,9 +66,7 @@ Portfolio: anuraggoyal.tech
 
 Email: [goyalanurag2005@gmail.com]
 
-[LinkedIn](https://www.linkedin.com/in/anurag-goyal-05929b317/)
-
-[GitHub](github.com/Anurag20075)
+Linkdin:[LinkedIn](https://www.linkedin.com/in/anurag-goyal-05929b317/)
 
 📝 License
 * This project is open-source and available under the MIT License.
