@@ -66,7 +66,7 @@ Portfolio: anuraggoyal.tech
 
 Email: [goyalanurag2005@gmail.com]
 
-LinkedIn: linkedin.com/in/anurag-goyal
+LinkedIn: [https://www.linkedin.com/in/anurag-goyal-05929b317/]
 
 GitHub: [github.com/Anurag20075]
 
