@@ -4,7 +4,7 @@ Welcome to my personal developer portfolio built using **React.js** and **Tailwi
 
 ## 🎬 Project Demo Video
 
-<video src="video/Project-Video.mp4" controls width="600"></video>
+<video src="Video/Project-Video.mp4" controls width="600"></video>
 
 ## 🚀 Live Demo
 
