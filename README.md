@@ -12,13 +12,9 @@ You can view my live website hosted on Vercel here:
 ---
 
 ## 📌 Features
-
-- 🔥 Fully responsive layout  
-- 🌙 Dark/Light mode toggle  
-- 🧩 Reusable React components  
-- 📁 Projects section with detailed cards  
+  - 🧩 Reusable React components  
+- 📁 Projects section with github repo link  
 - 🧠 Skills section with icons  
-- 📚 Education timeline  
 - 📞 Contact form (submits via EmailJS or other service)  
 - 🎨 Tailwind CSS for styling  
 
@@ -30,7 +26,7 @@ You can view my live website hosted on Vercel here:
 - **Styling**: Tailwind CSS  
 - **Routing**: React Router  
 - **Icons**: Lucide React  
-- **Deployment**: GitHub Pages / Netlify / Vercel  
+- **Deployment**: GitHub Pages / Vercel  
 
 ---
 
