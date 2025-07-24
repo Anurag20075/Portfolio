@@ -2,10 +2,6 @@
 
 Welcome to my personal developer portfolio built using **React.js** and **Tailwind CSS**! This project showcases my projects, skills, education, contact information, and more — all in a sleek, responsive, and dark/light toggle-enabled interface.
 
-## 🎬 Project Demo Video
-
-<video src="Video/Project-Video.mp4" controls width="600"></video>
-
 ## 🚀 Live Demo
 
 You can view my live website hosted on Vercel here:  
