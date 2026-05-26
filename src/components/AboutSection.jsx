@@ -349,20 +349,24 @@ const AboutSection = () => {
             </motion.div>
 
             {/* CTA Button */}
-            <motion.div variants={ctaVariants}>
-              <motion.a
-                href="/Anurag_Goyal_Resume.pdf"
-                whileHover={{ scale: 1.03, y: -2 }}
-                whileTap={{ scale: 0.97 }}
-                className="group/btn relative inline-flex items-center gap-3 px-8 py-4 bg-[#008C9A] text-white rounded-xl font-bold text-sm tracking-wide shadow-md shadow-[#008C9A]/20 overflow-hidden transition-all duration-500 hover:bg-[#006B75] hover:shadow-lg hover:shadow-[#006B75]/25"
-              >
-                {/* Shimmer sweep */}
-                <span className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+         {/* CTA Button */}
+      <motion.div variants={ctaVariants}>
+        <motion.a
+          href="/Anurag_Goyal_Resume.pdf"
+          download="Anurag_Goyal_Resume.pdf" // 👈 Forces the browser to download instead of opening it
+          target="_blank"                    // 👈 Fallback: Opens in new tab if the browser restricts direct downloads
+          rel="noopener noreferrer"          // 👈 Security best practice when using target="_blank"
+          whileHover={{ scale: 1.03, y: -2 }}
+          whileTap={{ scale: 0.97 }}
+          className="group/btn relative inline-flex items-center gap-3 px-8 py-4 bg-[#008C9A] text-white rounded-xl font-bold text-sm tracking-wide shadow-md shadow-[#008C9A]/20 overflow-hidden transition-all duration-500 hover:bg-[#006B75] hover:shadow-lg hover:shadow-[#006B75]/25"
+        >
+          {/* Shimmer sweep */}
+          <span className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
-                <Download size={18} className="relative z-10 group-hover/btn:animate-bounce" />
-                <span className="relative z-10">Download Resume</span>
-              </motion.a>
-            </motion.div>
+          <Download size={18} className="relative z-10 group-hover/btn:animate-bounce" />
+          <span className="relative z-10">Download Resume</span>
+        </motion.a>
+      </motion.div>
           </motion.div>
         </div>
       </div>

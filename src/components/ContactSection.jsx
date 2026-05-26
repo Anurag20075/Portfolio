@@ -1,191 +1,3 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import {
-//   Mail,
-//   MapPin,
-//   Phone,
-//   Send,
-//   Linkedin,
-//   Github,
-//   Instagram,
-//   Code2,
-//   Download
-// } from "lucide-react";
-
-// const ContactSection = () => {
-//   const contactInfo = [
-//     {
-//       icon: <MapPin className="text-[#00C6D7]" />,
-//       label: "Location",
-//       value: "Agra, Uttar Pradesh, India",
-//     },
-//     {
-//       icon: <Mail className="text-[#00C6D7]" />,
-//       label: "Email",
-//       value: "goyalanurag2005@gmail.com",
-//     },
-//     {
-//       icon: <Phone className="text-[#00C6D7]" />,
-//       label: "Phone",
-//       value: "(+91) 6398802517",
-//     },
-//   ];
-
-//   return (
-//     <section id="contact" className="py-24 px-6 bg-[#0B0F1A]">
-//       <div className="max-w-6xl mx-auto">
-//         <div className="text-center mb-16">
-//           <motion.h2
-//             initial={{ opacity: 0, y: 20 }}
-//             whileInView={{ opacity: 1, y: 0 }}
-//             viewport={{ once: true }}
-//             className="text-4xl md:text-5xl font-bold text-white mb-4"
-//           >
-//             Get In Touch
-//           </motion.h2>
-//           <div className="w-24 h-1 bg-gradient-to-r from-[#00C6D7] to-blue-500 mx-auto rounded-full mb-6"></div>
-//           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-//             Whether you have a question or just want to say hi, I'll try my best to get back to you!
-//           </p>
-//         </div>
-
-//         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-//           {/* Left Side: Contact Info & Socials */}
-//           <div className="lg:col-span-2 space-y-6">
-//             {contactInfo.map((info, idx) => (
-//               <motion.div
-//                 key={idx}
-//                 whileHover={{ x: 10 }}
-//                 className="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-5 transition-all"
-//               >
-//                 <div className="p-3 bg-white/5 rounded-xl">{info.icon}</div>
-//                 <div>
-//                   <p className="text-sm text-slate-500 font-medium">{info.label}</p>
-//                   <p className="text-white font-semibold">{info.value}</p>
-//                 </div>
-//               </motion.div>
-//             ))}
-
-//             {/* Social Links Grid */}
-//             <div className="pt-8">
-//               <h4 className="text-white font-bold mb-6 flex items-center gap-2">
-//                 <Code2 size={20} className="text-[#00C6D7]" />
-//                 Connect with me
-//               </h4>
-//               <div className="flex flex-wrap gap-4">
-//                 {[
-//                   { icon: <Linkedin size={20} />, link: "https://www.linkedin.com/in/anurag-goyal-05929b317/", color: "hover:bg-blue-600" },
-//                   { icon: <Github size={20} />, link: "https://github.com/Anurag20075", color: "hover:bg-slate-700" },
-//                   { icon: <Instagram size={20} />, link: "https://www.instagram.com/anurag.goyal.3158652/", color: "hover:bg-pink-600" },
-//                 ].map((social, i) => (
-//                   <a
-//                     key={i}
-//                     href={social.link}
-//                     target="_blank"
-//                     className={`w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white transition-all duration-300 ${social.color} hover:scale-110`}
-//                   >
-//                     {social.icon}
-//                   </a>
-//                 ))}
-//               </div>
-//             </div>
-
-//             {/* Resume Download Logic Kept and Styled */}
-//             <div className="pt-4">
-//               <a
-//                 href="/Anurag_Goyal_Resume.pdf"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 download
-//                 className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white/5 border border-[#00C6D7]/30 text-[#00C6D7] rounded-xl font-bold hover:bg-[#00C6D7]/10 transition-all"
-//               >
-//                 <Download size={20} />
-//                 Download Resume
-//               </a>
-//             </div>
-//           </div>
-
-//           {/* Right Side: Contact Form */}
-//           <motion.div
-//             initial={{ opacity: 0, x: 20 }}
-//             whileInView={{ opacity: 1, x: 0 }}
-//             viewport={{ once: true }}
-//             className="lg:col-span-3"
-//           >
-//             <form
-//               action="https://formsubmit.co/goyalanurag2005@gmail.com"
-//               method="POST"
-//               className="p-8 rounded-2xl bg-white/5 border border-white/10 space-y-6 shadow-2xl"
-//             >
-//               {/* FormSubmit Config */}
-//               <input type="hidden" name="_next" value="http://portfolio-five-flame-11.vercel.app/Thanks-You.html" />
-//               <input type="hidden" name="_template" value="table" />
-
-//               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-//                 <div className="space-y-2">
-//                   <label className="text-sm font-medium text-slate-400 ml-1">Name</label>
-//                   <input
-//                     type="text"
-//                     name="name"
-//                     required
-//                     placeholder="Enter your name"
-//                     className="w-full px-4 py-3 bg-[#0B0F1A] border border-white/10 rounded-xl focus:ring-2 focus:ring-[#00C6D7] focus:border-transparent outline-none text-white transition-all"
-//                   />
-//                 </div>
-//                 <div className="space-y-2">
-//                   <label className="text-sm font-medium text-slate-400 ml-1">Email</label>
-//                   <input
-//                     type="email"
-//                     name="email"
-//                     required
-//                     placeholder="xyz@example.com"
-//                     className="w-full px-4 py-3 bg-[#0B0F1A] border border-white/10 rounded-xl focus:ring-2 focus:ring-[#00C6D7] focus:border-transparent outline-none text-white transition-all"
-//                   />
-//                 </div>
-//               </div>
-
-//               <div className="space-y-2">
-//                 <label className="text-sm font-medium text-slate-400 ml-1">Subject</label>
-//                 <input
-//                   type="text"
-//                   name="subject"
-//                   required
-//                   placeholder="What is this regarding?"
-//                   className="w-full px-4 py-3 bg-[#0B0F1A] border border-white/10 rounded-xl focus:ring-2 focus:ring-[#00C6D7] focus:border-transparent outline-none text-white transition-all"
-//                 />
-//               </div>
-
-//               <div className="space-y-2">
-//                 <label className="text-sm font-medium text-slate-400 ml-1">Message</label>
-//                 <textarea
-//                   name="message"
-//                   required
-//                   rows="4"
-//                   placeholder="Your message here..."
-//                   className="w-full px-4 py-3 bg-[#0B0F1A] border border-white/10 rounded-xl focus:ring-2 focus:ring-[#00C6D7] focus:border-transparent outline-none text-white transition-all resize-none"
-//                 ></textarea>
-//               </div>
-
-//               <motion.button
-//                 whileHover={{ scale: 1.02, boxShadow: "0 0 20px rgba(0, 198, 215, 0.2)" }}
-//                 whileTap={{ scale: 0.98 }}
-//                 type="submit"
-//                 className="w-full py-4 bg-[#00C6D7] text-[#0B0F1A] font-extrabold rounded-xl flex items-center justify-center gap-2 transition-all"
-//               >
-//                 <Send size={20} />
-//                 Send Message
-//               </motion.button>
-//             </form>
-//           </motion.div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ContactSection;
-
-
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -276,6 +88,12 @@ const ContactSection = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
   };
 
+  // Added ctaVariants to prevent the reference error breakdown
+  const ctaVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.9, ease: "easeOut" } },
+  };
+
   // ─── Floating Orbs (Light Theme) ───
   const FloatingOrb = ({ className, delay = 0 }) => (
     <motion.div
@@ -347,7 +165,7 @@ const ContactSection = () => {
             })}
 
             {/* Social Links */}
-            <div className="pt-8">
+            <div className="pt-4">
               <motion.h4 variants={cardVariants} className="text-slate-900 font-bold mb-5 flex items-center gap-2 text-sm">
                 <Code2 size={18} className="text-[#008C9A]" />
                 <span className="uppercase tracking-wider text-xs font-semibold">Connect with me</span>
@@ -378,22 +196,24 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Resume Download */}
-            <motion.div variants={cardVariants} className="pt-6">
-              <motion.a
-                href="/Anurag_Goyal_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download
-                whileHover={{ scale: 1.03, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                className="group/btn relative w-full flex items-center justify-center gap-2.5 px-6 py-4 bg-white border border-[#008C9A]/20 text-[#008C9A] rounded-xl font-bold text-sm tracking-wide hover:border-[#008C9A]/40 hover:shadow-md hover:shadow-[#008C9A]/10 overflow-hidden transition-all duration-300"
-              >
-                <span className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-[#008C9A]/5 to-transparent" />
-                <Download size={18} className="relative z-10" />
-                <span className="relative z-10">Download Resume</span>
-              </motion.a>
-            </motion.div>
+            {/* Resume Download Section */}
+            <div className="pt-4">
+              <motion.div variants={ctaVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                <motion.a
+                  href="/Anurag_Goyal_Resume.pdf"
+                  download="Anurag_Goyal_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.03, y: -2 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="group/btn relative inline-flex items-center gap-3 px-8 py-4 bg-[#008C9A] text-white rounded-xl font-bold text-sm tracking-wide shadow-md shadow-[#008C9A]/20 overflow-hidden transition-all duration-500 hover:bg-[#006B75] hover:shadow-lg hover:shadow-[#006B75]/25 w-full sm:w-auto justify-center"
+                >
+                  <span className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+                  <Download size={18} className="relative z-10 group-hover/btn:animate-bounce" />
+                  <span className="relative z-10">Download Resume</span>
+                </motion.a>
+              </motion.div>
+            </div>
           </motion.div>
 
           {/* Right Side: Form */}
@@ -412,7 +232,6 @@ const ContactSection = () => {
               {/* FormSubmit Config */}
               <input type="hidden" name="_next" value="http://portfolio-five-flame-11.vercel.app/Thanks-You.html" />
               <input type="hidden" name="_template" value="table" />
-              {/* Disable Captcha for cleaner UI (optional, depends on formsubmit needs) */}
 
               <motion.div variants={formVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <motion.div variants={fieldVariants} className="space-y-2">
